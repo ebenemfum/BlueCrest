@@ -32,8 +32,10 @@
                                         <td>{{ $submission->cluster }}</td>
                                         <td>{{ $submission->supervisor_name }}</td>
                                         <td>{{ $submission->attention_pledge }}</td>
-                                        <td>{{ $submission->passport_photo }}</td>
-                                        <td>{{ $submission->signature }}</td>
+                                        <td><img src="{{ asset('storage/' . $submission->passport_photo) }}" alt="Passport Photo"></td>
+                                        <td><img src="{{ asset('storage/' . $submission->signature) }}" alt="Signature"></td>
+
+
                                         <td>{{ $submission->created_at }}</td>
 
                                     </tr>

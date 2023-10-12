@@ -26,7 +26,7 @@ public function store(Request $request)
         $form->passport_photo = $request->file('passport_photo')->store('passport-photos');
     }
     if ($request->hasFile('signature')) {
-        $form->signature = $request->file('signature')->store('signatures');
+        $form->signature = $request->file('signature')->store('signature-photos');
     }
 
     $form->save();
